@@ -1,0 +1,210 @@
+Login:
+
+USER INVERSOR NORMAL:
+correo:davidbetalleluz31@gmail.com
+password:12345678M$
+
+USER INVERSOR JURIDICA:
+correo:admsociedadbienesraices@gmail.com
+password:12345678M$
+
+USER GESTOR NORMAL:
+correo:gestor-normal-1@gmail.com
+password:12345678M$
+
+USER GESTOR JURIDICA:
+correo:gestor-juridico-1@gmail.com
+password:12345678M$
+
+id_rol: 1 Administrador
+id_rol: 2 Inversionista 
+id_rol: 3 Gestor
+id_rol: 4 Analizta de riesgo
+
+id_persona_rol: 1 Persona natural
+id_persona_rol: 2 Persona juridica 
+
+https://api.goinmuebles.com/api/departamentos - Amazonas(01) - Áncash(02) - Lima(15)
+https://api.goinmuebles.com/api/provincias/02 - Áncash(Departamento(02)) - Huaraz(Provincia(0201)) - Aija(Provincia(0202)) - Antonio Raymondi(Provincia(0203))
+https://api.goinmuebles.com/api/distritos/02/0201 - Huaraz(Provincia(0201)) - Cochabamba - Colcabamba
+          {/* Combo departamento */}
+          {/* <FormField
+            control={form.control}
+            name="department"
+            render={({ field }) => {
+              return (
+                <FormItem className="flex w-full flex-col gap-1 col-span-4">
+                  <FormLabel
+                    className={`font-bold ${
+                      user.rol === "Gestor" ? "text-tomato" : "text-teal"
+                    }`}
+                  >
+                    Departamento
+                  </FormLabel>
+
+                  <Select
+                    onValueChange={(value) => {
+                      handleDepartmentChange(value);
+                      form.setValue("department", value); // set value in the form
+                      field.onChange(value);
+                    }}
+                    defaultValue={field.value}
+                    value={field.value}
+                  >
+                    <FormControl className="p-[13px_18px] rounded-[20px]">
+                      <SelectTrigger
+                        className={`font-josefin border-[2px] ${
+                          user.rol === "Gestor"
+                            ? "border-tomato/80"
+                            : "border-teal"
+                        }`}
+                      >
+                        {field.value ? (
+                          <SelectValue placeholder="Selecciona" />
+                        ) : (
+                          "Selecciona"
+                        )}
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent className="h-[150px]">
+                      {department.map((item) => (
+                        <SelectItem
+                          value={`${item.nombre}`}
+                          key={item.nombre}
+                          className={`${
+                            user.rol === "Gestor"
+                              ? "focus:bg-tomato/20"
+                              : "focus:bg-teal/20"
+                          } `}
+                        >
+                          {item.nombre}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          /> */}
+          {/* Combo provincia */}
+          {/* <FormField
+            control={form.control}
+            name="province"
+            render={({ field }) => {
+              return (
+                <FormItem className="flex w-full flex-col gap-1 col-span-4">
+                  <FormLabel
+                    className={`font-bold ${
+                      user.rol === "Gestor" ? "text-tomato" : "text-teal"
+                    }`}
+                  >
+                    Provincia
+                  </FormLabel>
+
+                  <Select
+                    onValueChange={(value) => {
+                      handleProvinceChange(value);
+                      form.setValue("province", value);
+                      field.onChange(value);
+                    }}
+                    defaultValue={field.value}
+                    value={field.value}
+                    disabled={provinceId > 0 ? false : true}
+                  >
+                    <FormControl className="p-[13px_18px] rounded-[20px]">
+                      <SelectTrigger
+                        className={`font-josefin border-[2px] ${
+                          user.rol === "Gestor"
+                            ? "border-tomato/80"
+                            : "border-teal"
+                        }`}
+                      >
+                        {field.value ? (
+                          <SelectValue placeholder="Selecciona" />
+                        ) : (
+                          "Selecciona"
+                        )}
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent className="h-[150px]">
+                      {province.map((provincia) => (
+                        <SelectItem
+                          value={`${provincia.nombre}`}
+                          key={provincia.nombre}
+                          className={`${
+                            user.rol === "Gestor"
+                              ? "focus:bg-tomato/20"
+                              : "focus:bg-teal/20"
+                          } `}
+                        >
+                          {provincia.nombre}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          /> */}
+          {/* Combo distrito */}
+          {/* <FormField
+            control={form.control}
+            name="district"
+            render={({ field }) => (
+              <FormItem className="flex w-full flex-col gap-1 col-span-4">
+                <FormLabel
+                  className={`font-bold ${
+                    user.rol === "Gestor" ? "text-tomato" : "text-teal"
+                  }`}
+                >
+                  Distrito
+                </FormLabel>
+
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                  value={field.value}
+                  disabled={districtId > 0 ? false : true}
+                >
+                  <FormControl className="p-[13px_18px] rounded-[20px]">
+                    <SelectTrigger
+                      className={`font-josefin border-[2px] ${
+                        user.rol === "Gestor"
+                          ? "border-tomato/80"
+                          : "border-teal"
+                      }`}
+                    >
+                      {field.value ? (
+                        <SelectValue placeholder="Selecciona" />
+                      ) : (
+                        "Selecciona"
+                      )}
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent className="h-[150px]">
+                    {district.map((distrito) => (
+                      <SelectItem
+                        value={`${distrito.nombre}`}
+                        key={distrito.id}
+                        className={`${
+                          user.rol === "Gestor"
+                            ? "focus:bg-tomato/20"
+                            : "focus:bg-teal/20"
+                        } `}
+                      >
+                        {distrito.nombre}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          /> */}
+
+Selects: 
+- Giro de negocio: / origen-fondos
+- Experciencia en el rubro: / 
+- Tipo de inmueble: / 
