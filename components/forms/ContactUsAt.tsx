@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 
 import { Input } from "@/components/ui/input";
-import { ContactUsAtApi } from "@/api";
+import { ContactUsAtApi } from "@/server";
 import { Button } from "@/components/ui/button";
 import { BasicModal } from "@/components/shared";
 import { useLoading, useToggle } from "@/hooks";

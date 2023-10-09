@@ -3,7 +3,7 @@ import { useReducer, useContext, useEffect } from "react";
 import { authReducer } from "@/context/auth/authReducer";
 import { AuthContext } from "@/context/auth/AuthContext";
 import { IUser } from "@/interfaces";
-import { Token, User } from "@/api";
+import { Token, User } from "@/server";
 
 export interface AuthState {
   accessToken: string;

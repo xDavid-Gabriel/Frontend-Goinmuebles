@@ -31,7 +31,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LocationSelector } from "@/components/forms";
 import { useRouter } from "next/navigation";
-import { UserInversorApi } from "@/api";
+import { UserInversorApi } from "@/server";
 interface IEmploymentData {
   id: number;
   cargos_ocupa: string;

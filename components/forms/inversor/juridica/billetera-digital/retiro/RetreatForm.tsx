@@ -1,6 +1,6 @@
 "use client";
 
-import { DigitalWalletApi } from "@/api";
+import { DigitalWalletApi } from "@/server";
 import { BasicModal } from "@/components/shared";
 import { Button } from "@/components/ui/button";
 

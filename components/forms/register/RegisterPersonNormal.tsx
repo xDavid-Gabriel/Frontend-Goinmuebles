@@ -21,7 +21,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 import { PasswordInputWithEye } from "@/components/forms";
 import { useLoading, useToggle } from "@/hooks";
-import { RegisterGestorApi, RegisterInversorApi } from "@/api";
+import { RegisterGestorApi, RegisterInversorApi } from "@/server";
 import { useState } from "react";
 import { BasicModal } from "@/components/shared";
 import { useRouter } from "next/navigation";

@@ -29,7 +29,7 @@ import { LocationSelector } from "@/components/forms";
 import { ENV, selectOptions } from "@/utils";
 import { useData, useLoading, useToggle } from "@/hooks";
 import { useRouter } from "next/navigation";
-import { UserInversorApi } from "@/api";
+import { UserInversorApi } from "@/server";
 interface IRepresentante {
   id: number;
   codigo_usuario: string;

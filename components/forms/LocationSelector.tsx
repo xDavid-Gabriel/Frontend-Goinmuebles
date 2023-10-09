@@ -1,5 +1,5 @@
 "use client";
-import { LocationApi } from "@/api";
+import { LocationApi } from "@/server";
 import {
   FormControl,
   FormField,

@@ -38,7 +38,7 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import React from "react";
 import { LocationSelector } from "@/components/forms";
 import { BasicLoading } from "../../../../shared/BasicLoading";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 import { useRouter } from "next/navigation";
 export interface IPropertyData {
   id: string;

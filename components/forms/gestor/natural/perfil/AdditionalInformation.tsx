@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/select";
 import { ENV } from "@/utils";
 import { useData, useLoading, useToggle } from "@/hooks";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 import { useRouter } from "next/navigation";
 interface IMedium {
   medio_interes: string;

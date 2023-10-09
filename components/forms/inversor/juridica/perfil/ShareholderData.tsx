@@ -37,7 +37,7 @@ import { useData, useDynamicInputs, useLoading, useToggle } from "@/hooks";
 import React from "react";
 import { FaPlus } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-import { UserGestorApi, UserInversorApi } from "@/api";
+import { UserGestorApi, UserInversorApi } from "@/server";
 export interface IShareholderData {
   id?: number;
   codigo_usuario: string;

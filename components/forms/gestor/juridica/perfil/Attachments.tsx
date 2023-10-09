@@ -3,7 +3,7 @@ import React from "react";
 import { IUser } from "@/interfaces";
 import { useStateAuthContext } from "@/context";
 import { AttachmentsValidation } from "@/lib/validations/gestor/juridica/perfil";
-import { AttachmentsApi } from "@/api";
+import { AttachmentsApi } from "@/server";
 import { FileUpload } from "@/components/forms";
 import { fileInputsGestorJuridica, hasValidData } from "@/utils";
 

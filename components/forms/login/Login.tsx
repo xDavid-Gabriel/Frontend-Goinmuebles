@@ -20,7 +20,7 @@ import { Input } from "@/components/ui/input";
 import { PasswordInputWithEye } from "@/components/forms";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
-import { LoginApi } from "@/api/login";
+import { LoginApi } from "@/server/login";
 import { useStateAuthContext } from "@/context";
 
 const loginCtrl = new LoginApi();

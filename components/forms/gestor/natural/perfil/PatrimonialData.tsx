@@ -37,7 +37,7 @@ import { useData, useDynamicInputs, useLoading, useToggle } from "@/hooks";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
 import { LocationSelector } from "@/components/forms";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 import { useRouter } from "next/navigation";
 
 export interface IPropertyData {

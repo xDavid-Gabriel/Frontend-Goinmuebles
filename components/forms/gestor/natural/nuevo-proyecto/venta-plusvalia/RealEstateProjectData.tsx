@@ -52,7 +52,6 @@ export const RealEstateProjectData = ({ user, tipoInversionVenta }: Props) => {
       real_estate_market_study: "", // Estudio del mercado inmobiliario
     },
   });
-  console.log(user);
 
   const onSubmit = async (
     values: z.infer<typeof RealEstateProjectDataValidation>

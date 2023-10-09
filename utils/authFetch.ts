@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { Token } from "../api";
+import { Token } from "../server";
 
 interface AuthFetchParams extends AxiosRequestConfig {
   data?: Record<string, unknown>;

@@ -42,7 +42,7 @@ import { LocationSelector } from "@/components/forms";
 import { useData, useLoading, useToggle } from "@/hooks";
 import { ENV } from "@/utils";
 import { useState } from "react";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 import { useRouter } from "next/navigation";
 export interface ISpouseUser {
   id: number;

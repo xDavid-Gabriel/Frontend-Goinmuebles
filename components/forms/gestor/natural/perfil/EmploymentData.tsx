@@ -30,7 +30,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LocationSelector } from "@/components/forms";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 import { useRouter } from "next/navigation";
 
 interface IEmploymentData {

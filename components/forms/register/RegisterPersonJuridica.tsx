@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { RegisterPersonJuridicaValidation } from "@/lib/validations/register/register-person-juridica";
 import { PasswordInputWithEye } from "@/components/forms";
-import { RegisterGestorApi, RegisterInversorApi } from "@/api";
+import { RegisterGestorApi, RegisterInversorApi } from "@/server";
 import { useState } from "react";
 import { useLoading, useToggle } from "@/hooks";
 import { useRouter } from "next/navigation";

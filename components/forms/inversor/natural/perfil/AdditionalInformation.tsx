@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/select";
 import { ENV } from "@/utils";
 import { useData, useLoading, useToggle } from "@/hooks";
-import { UserInversorApi } from "@/api";
+import { UserInversorApi } from "@/server";
 import { useRouter } from "next/navigation";
 interface Props {
   user: IUser;

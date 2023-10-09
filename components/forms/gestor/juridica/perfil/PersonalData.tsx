@@ -29,7 +29,7 @@ import { LocationSelector } from "@/components/forms";
 import { ENV, selectOptions } from "@/utils";
 import { useRouter } from "next/navigation";
 import { useData, useLoading, useToggle } from "@/hooks";
-import { UserGestorApi } from "@/api";
+import { UserGestorApi } from "@/server";
 
 interface Props {
   user: IUser;

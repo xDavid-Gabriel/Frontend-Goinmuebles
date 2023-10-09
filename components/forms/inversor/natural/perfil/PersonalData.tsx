@@ -32,7 +32,7 @@ import { useData, useLoading, useToggle } from "@/hooks";
 import { ENV } from "@/utils";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { UserInversorApi } from "@/api";
+import { UserInversorApi } from "@/server";
 export interface ISpouseUser {
   id: number;
   codigo_usuario: string;

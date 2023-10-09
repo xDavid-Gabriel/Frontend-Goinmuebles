@@ -24,7 +24,7 @@ import { FaPlus } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
-import { UserInversorApi } from "@/api";
+import { UserInversorApi } from "@/server";
 import { IUser } from "@/interfaces";
 export interface ICommercialReferences {
   id: number;
